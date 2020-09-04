@@ -37,7 +37,7 @@ protected:
 	bool isShoot;
 	bool isPowerUp;
 	int counterPowerUp;
-
+	
 	void move();
 	void shoot();
 	void draw();

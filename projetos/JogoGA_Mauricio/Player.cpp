@@ -4,6 +4,8 @@ Player::Player()
 {
 	isPowerUp = false;
 	counterPowerUp = 0;
+	
+		
 }
 
 

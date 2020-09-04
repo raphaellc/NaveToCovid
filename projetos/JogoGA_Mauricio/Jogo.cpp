@@ -24,7 +24,7 @@ void Jogo::inicializar()
 	gRecursos.carregarSpriteSheet("tiro", "assets/sprite/tiro2.png", 1, 1);
 	player.setSpriteSheet("player");
 	player.Tiro::setSpriteSheet("tiro");
-
+	
 #pragma endregion
 		
 #pragma region SOM

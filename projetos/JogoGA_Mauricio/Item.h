@@ -13,10 +13,10 @@ public:
 	void setSpriteSheet(string p_spriteSheet);
 	void startNewItem(int p_posX, int p_posY, int p_powerUp);
 
-	void setPowerUp(int p_type);
-	int getPowerUp();
-	void setSpeed(float p_speed);
-	float getSpeed();
+	void setPowerUp(int p_type) override;
+	int getPowerUp() override;
+	void setSpeed(float p_speed) override;
+	float getSpeed() override;
 
 	Sprite getSprite();
 	int getPosX();
