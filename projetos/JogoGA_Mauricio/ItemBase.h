@@ -1,7 +1,7 @@
 #pragma once
 #include "libUnicornio.h"
-
-class ItemBase
+#include "GameObject.h"
+class ItemBase : public GameObject
 {
 public:
 	ItemBase();
@@ -11,11 +11,10 @@ public:
 	virtual int getPowerUp() = 0;
 	virtual void setSpeed(float p_speed) = 0;
 	virtual float getSpeed() = 0;
-
 	virtual void powerUpActive();
 
 protected:
 	int powerUpType;
-	float speed;
+	
 };
 

@@ -1,7 +1,8 @@
 #pragma once
 #include "libUnicornio.h"
+#include "GameObject.h"
 
-class Asteroid
+class Asteroid : GameObject
 {
 public:
 	Asteroid();

@@ -1,24 +1,24 @@
 #pragma once
 #include "libUnicornio.h"
 #include "Tiro.h"
+#include "GameObject.h"
 
-class Player : public Tiro
+class Player : public Tiro, public GameObject
 {
 public:
 	Player();
 	~Player();
 	
 	void playerInicializar();
+	
 	void setPosition(int p_x, int p_y);
 	void setSpeed(float p_speed);
 	float getSpeed();
 	void setSpriteSheet(string p_spriteSheet);
 
-	void update();
-
-	Sprite getSprite();
-	int getPosX();
-	int getPosY();
+	void update() override;
+	void draw() override;
+		
 	float getRot();
 	void setIsShoot(bool p_status);
 	bool getIsShoot();
@@ -28,11 +28,8 @@ public:
 	void setIsPowerUp(bool p_status);
 	int getPowerUpTime();
 
-protected:
+private:
 	Som effectShoot;
-	Sprite sprite;
-	float x, y;
-	float speed;
 	float speedIntro = 1.0f;
 	bool isShoot;
 	bool isPowerUp;
@@ -40,5 +37,5 @@ protected:
 	
 	void move();
 	void shoot();
-	void draw();
+	
 };

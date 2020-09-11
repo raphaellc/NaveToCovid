@@ -248,7 +248,7 @@ void Jogo::collisionTest(int p_obj)
 #pragma region COLISAO_INIMIGO_X_TIRO
 
 	if (uniTestarColisao(asteroid[p_obj].getSprite(), asteroid[p_obj].getPosX(), asteroid[p_obj].getPosY(), 0,
-		player.Tiro::getSprite(), player.Tiro::getPosX(), player.Tiro::getPosY(), 0))
+		player.getSprite(), player.getPosX(), player.getPosY(), 0))
 	{
 		asteroid[p_obj].asteroidStart();
 		player.Tiro::setPosition(0, 0);
